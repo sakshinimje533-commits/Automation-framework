@@ -1,0 +1,30 @@
+package TestNG_Study;
+
+import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class BeforeAfterMethod {
+	//jr error message check kraych ahe hi main functionality zali tya adhi main functionality check kraychi aste . error msg check kraychya adhi khi tri krav lagel input dyav lagel.  
+    //ek login page ahe url enter krav lagel tya mdhe username la username and password invalid dyaycha click kel tr error yenar. error msg ala tr ata check kraych ahe
+	@BeforeMethod   //Before method kuthe pn lihu shkto @test chya khli pn lihu shkto @Test chya khali lihil mhnu @test ntr run nhi honar @Beforemethod aadhich run honar
+	public void beforeMethod() {            //jr @beforemethod la comment kel tr @test run honar mg @aftermethod run honar
+		Reporter.log("Before Method is running",true);
+	}
+	
+  @Test
+  public void f() {
+	  Reporter.log("Test Method is running",true); //jr @Test la comment kel tr error yeil
+  }                                                 //class mdhe ek pn @Test nhi ahe tr error ala
+  
+  @BeforeMethod   
+	public void beforeMethod1() {            
+		Reporter.log("Before Method1 is running",true);
+	}
+  
+  @AfterMethod //---@Test chya ntr run honar
+  public void afterMethod() {
+	  Reporter.log("After Method is running", true);
+  }
+}

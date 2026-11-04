@@ -1,0 +1,148 @@
+{
+  "conversationId": "a202b742-aca2-47f2-a921-a29783ca97ac",
+  "title": "check the code and give me suggestion for SwagLabL...",
+  "requesterUsername": "sakshinimje533-commits",
+  "responderUsername": "GitHub Copilot",
+  "turns": [
+    {
+      "message": {
+        "text": "check the code and give me suggestion for SwagLabLoginSteps"
+      },
+      "currentDocument": {
+        "uri": "/AutomationPractices/src/test/java/Steps/SwagLabLoginSteps.java"
+      },
+      "references": [],
+      "ignoredSkills": [],
+      "userLanguage": "en",
+      "source": "panel",
+      "model": "Auto",
+      "chatMode": "Agent",
+      "customChatModeId": "Agent",
+      "needToolCallConfirmation": true,
+      "turnId": "cb2e3e36-eb93-465b-9275-a573c510ebf5",
+      "role": "user",
+      "timestamp": "2026-10-28T06:40:42.813015200Z"
+    },
+    {
+      "reply": {
+        "annotations": [],
+        "references": [],
+        "hideText": false,
+        "notifications": [],
+        "followups": [],
+        "errorMessages": [
+          {
+            "error": {
+              "message": "No model configuration found",
+              "code": -1
+            }
+          }
+        ],
+        "editAgentRounds": [],
+        "panelMessages": [],
+        "steps": [],
+        "agentMessages": [],
+        "data": {},
+        "modelName": "auto",
+        "billingMultiplier": 0.0
+      },
+      "turnId": "cb2e3e36-eb93-465b-9275-a573c510ebf5",
+      "role": "copilot",
+      "timestamp": "2026-10-28T06:40:43.174685600Z"
+    },
+    {
+      "message": {
+        "text": "create test case"
+      },
+      "currentDocument": {
+        "uri": "/AutomationPractices/src/test/java/Steps/SwagLabLoginSteps.java"
+      },
+      "references": [],
+      "ignoredSkills": [],
+      "userLanguage": "en",
+      "source": "panel",
+      "model": "Auto",
+      "chatMode": "Agent",
+      "customChatModeId": "Agent",
+      "needToolCallConfirmation": true,
+      "turnId": "04917327-7692-41e0-bb24-84c3eb740a2a",
+      "role": "user",
+      "timestamp": "2026-10-28T06:41:53.873568700Z"
+    },
+    {
+      "reply": {
+        "annotations": [],
+        "references": [],
+        "hideText": false,
+        "notifications": [],
+        "followups": [],
+        "errorMessages": [
+          {
+            "error": {
+              "message": "No model configuration found",
+              "code": -1
+            }
+          }
+        ],
+        "editAgentRounds": [],
+        "panelMessages": [],
+        "steps": [],
+        "agentMessages": [],
+        "data": {},
+        "modelName": "auto",
+        "billingMultiplier": 0.0
+      },
+      "turnId": "04917327-7692-41e0-bb24-84c3eb740a2a",
+      "role": "copilot",
+      "timestamp": "2026-10-28T06:41:53.920478Z"
+    },
+    {
+      "message": {
+        "text": "create login functionality test case"
+      },
+      "currentDocument": {
+        "uri": "/AutomationPractices/src/test/java/Steps/SwagLabLoginSteps.java"
+      },
+      "references": [],
+      "ignoredSkills": [],
+      "userLanguage": "en",
+      "source": "panel",
+      "model": "Auto",
+      "chatMode": "Agent",
+      "customChatModeId": "Agent",
+      "needToolCallConfirmation": true,
+      "turnId": "9a52917a-f5b0-4f3f-ae88-ff4fd029d528",
+      "role": "user",
+      "timestamp": "2026-10-28T06:43:18.675933700Z"
+    },
+    {
+      "reply": {
+        "annotations": [],
+        "references": [],
+        "hideText": false,
+        "notifications": [],
+        "followups": [],
+        "errorMessages": [
+          {
+            "error": {
+              "message": "No model configuration found",
+              "code": -1
+            }
+          }
+        ],
+        "editAgentRounds": [],
+        "panelMessages": [],
+        "steps": [],
+        "agentMessages": [],
+        "data": {},
+        "modelName": "auto",
+        "billingMultiplier": 0.0
+      },
+      "turnId": "9a52917a-f5b0-4f3f-ae88-ff4fd029d528",
+      "role": "copilot",
+      "timestamp": "2026-10-28T06:43:18.746677900Z"
+    }
+  ],
+  "creationDate": "2026-10-28T06:40:42.737872Z",
+  "lastMessageDate": "2026-10-28T06:43:18.834973100Z"
+}

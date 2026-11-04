@@ -1,0 +1,9 @@
+package TestNG_Study;
+
+import org.testng.annotations.Test;
+
+public class BeforeAfterMethod {
+  @Test
+  public void f() {
+  }
+}

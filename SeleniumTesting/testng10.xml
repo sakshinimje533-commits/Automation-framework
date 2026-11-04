@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG_Study.New1"/> 
+      <methods>
+     <exclude name="c">
+     
+     </exclude>
+      </methods>
+     
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

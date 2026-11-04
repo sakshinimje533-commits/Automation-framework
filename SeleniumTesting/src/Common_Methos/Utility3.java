@@ -1,0 +1,50 @@
+package Common_Methos;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.io.FileHandler;
+
+public class Utility3 {
+
+	
+		
+		private static String SheetName;
+
+		public static void ScrollIntoView(WebDriver driver, WebElement element) {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("argument[0].scrollIntoView(true)", element);	
+		}
+
+		public static void Screenshot(WebDriver driver, String PathName ) throws IOException {
+			TakesScreenshot t = (TakesScreenshot)driver;
+			File src = t.getScreenshotAs(OutputType.FILE);
+			File des = new File(PathName);
+			FileHandler.copy(src, des);
+		}
+		
+		public static String FetchDataFromExcel(String path , String SheetName, int rowNum, int cellNum ) throws EncryptedDocumentException, IOException {
+			FileInputStream file = new FileInputStream(path);
+			String data = WorkbookFactory.create(file).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
+			return data;
+		}
+
+		public static String readDataFromExcel(String filePath, String string, int i, int j) throws EncryptedDocumentException, IOException {
+			
+			FileInputStream file = new FileInputStream(filePath);
+			String data = WorkbookFactory.create(file).getSheet(SheetName).getRow(i).getCell(j).getStringCellValue();
+			return data;
+		
+		
+	}
+
+}

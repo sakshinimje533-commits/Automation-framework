@@ -1,0 +1,28 @@
+package Common_Methos;
+
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test {
+	
+	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		WebElement textbox = driver.findElement(By.xpath("//input[@type='text']"));
+		String path = "C:\\Users\\SakshiNimje\\OneDrive\\Documents\\TestData.xlsx";
+		String str = Utility.FetchDataFromExcel(path,"Sheet3", 1, 0);
+		textbox.sendKeys(str);
+		
+		
+		
+	}
+
+}

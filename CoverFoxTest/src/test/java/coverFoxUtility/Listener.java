@@ -1,0 +1,43 @@
+package coverFoxUtility;
+
+
+
+ 
+
+import java.io.IOException;
+
+
+
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestListener; 
+import org.testng.ITestResult; 
+import org.testng.Reporter;
+import coverFoxBase.Base;
+
+public class Listener extends Base implements ITestListener {
+	
+	
+
+
+
+	//private static final WebDriver driver = null;
+
+	//private WebDriver driver;
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		Reporter.log("TC " + result.getName() + " execution started", true);
+	}
+	
+	@Override
+	public void onTestFailure(ITestResult result){
+		Reporter.log("TC " + result.getName() + " is failed", true);
+		try { 
+			   Utility.takeScreenShot(driver, result.getName()); 
+			  } catch (IOException e) { 
+			   // TODO Auto-generated catch block 
+			   e.printStackTrace(); 
+			  }
+	}
+		
+}
