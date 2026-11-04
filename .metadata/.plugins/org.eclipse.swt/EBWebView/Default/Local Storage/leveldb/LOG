@@ -1,1 +1,3 @@
-2026/11/04-12:45:43.326 3890 Reuse MANIFEST: IO error: C:\Users\SakshiNimje\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001: Unable to create appendable file (ChromeMethodBFE: 21::NewAppendableFile::16)
+2026/11/04-12:53:38.520 958 Reusing MANIFEST C:\Users\SakshiNimje\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/04-12:53:38.523 958 Recovering log #3
+2026/11/04-12:53:38.527 958 Reusing old log C:\Users\SakshiNimje\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
